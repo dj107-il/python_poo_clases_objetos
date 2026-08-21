@@ -160,6 +160,37 @@ Se replicaron ejemplos relacionados con:
 
 ## Talleres
 
---- 
-Proximamente....
+## Taller de Clases y Objetos
+
+### Clase `Libro`
+
+En este taller se desarrolló una clase `Libro` para representar libros de una biblioteca y gestionar su disponibilidad.
+
+La clase contiene los siguientes atributos:
+
+- `titulo`: título del libro.
+- `autor`: autor del libro.
+- `paginas`: número total de páginas.
+- `disponible`: indica si el libro está disponible para préstamo.
+
+También se implementaron los siguientes métodos:
+
+- `__init__()`: inicializa los atributos del libro.
+- `prestar()`: cambia el estado del libro a prestado si está disponible.
+- `devolver()`: cambia el estado del libro a disponible si se encuentra prestado.
+- `informacion()`: muestra la información del libro y su estado actual.
+
+Se crearon dos objetos diferentes para comprobar el funcionamiento de la clase:
+
+- `Don Quijote de la Mancha`
+- `Cien años de soledad`
+
+Durante la prueba se verificaron los diferentes estados de los libros, incluyendo préstamos, intentos de préstamo de libros ya prestados, devoluciones e intentos de devolución de libros que ya estaban disponibles.
+
+### Evidencia de ejecución
+
+![Ejecución del taller de clases y objetos](images/taller_clases_objetos1.png)
+![Ejecución del taller de clases y objetos](images/taller_clases_objetos2.png)
+
+
 
