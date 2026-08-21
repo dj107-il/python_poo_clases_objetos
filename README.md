@@ -219,4 +219,104 @@ Además, se realizaron pruebas para comprobar el funcionamiento de las validacio
 
 ![Ejecución del taller de encapsulamiento](images/taller_encapsulamiento.png)
 
+# Reto integrador
 
+## Sistema de Préstamos de Equipos
+
+En este reto se desarrolló una aplicación en Python para gestionar el inventario, los préstamos y las devoluciones de equipos de cómputo.
+
+El proyecto permitió integrar los conceptos de **listas, tuplas y diccionarios**, además del uso de funciones para organizar el programa y un menú interactivo para facilitar su utilización.
+
+### Funcionalidades implementadas
+
+El sistema permite:
+
+- Visualizar los equipos registrados y su estado.
+- Registrar préstamos de equipos.
+- Validar si un equipo existe y está disponible.
+- Registrar el usuario y la fecha del préstamo.
+- Devolver equipos prestados.
+- Consultar el historial completo de préstamos.
+- Agregar nuevos equipos al inventario.
+- Utilizar un menú interactivo para navegar por las opciones.
+- Mostrar mensajes de confirmación y advertencia al usuario.
+
+### Conceptos aplicados
+
+#### Listas
+
+Se utilizan listas para almacenar el historial de préstamos de cada equipo.
+
+#### Tuplas
+
+Cada préstamo se almacena mediante una tupla con el formato:
+
+```python
+(usuario, fecha)
+```
+
+La tupla permite mantener estos datos como un conjunto inmutable.
+
+#### Diccionarios
+
+Se utiliza un diccionario como estructura principal para organizar la información de los equipos.
+
+Cada equipo contiene:
+
+- Su estado de disponibilidad.
+- Su lista de préstamos registrados.
+
+### Organización mediante funciones
+
+El programa se dividió en funciones independientes para facilitar la organización y reutilización del código:
+
+- `mostrar_equipos()`
+- `registrar_prestamo()`
+- `devolver_equipo()`
+- `ver_historial()`
+- `agregar_equipo()`
+- `menu()`
+
+### Menú interactivo
+
+El sistema cuenta con un menú que permite seleccionar las diferentes operaciones:
+
+1. Ver equipos disponibles.
+2. Registrar préstamo.
+3. Devolver equipo.
+4. Ver historial de préstamos.
+5. Agregar nuevo equipo.
+6. Salir del programa.
+
+El programa continúa ejecutándose hasta que el usuario selecciona la opción de salir.
+
+### Evidencia de ejecución
+
+Las siguientes capturas muestran el funcionamiento del sistema y las diferentes operaciones realizadas durante las pruebas.
+
+#### Menú principal y visualización de equipos
+
+![Menú principal y visualización de equipos](images/reto_sistema_prestamos1.png)
+
+#### Agregar equipos
+
+![Agregar equipo](images/reto_sistema_prestamos2.png)
+
+#### Registro de préstamo
+
+![Registro de préstamo](images/reto-sistema_prestamos3.png)
+
+
+#### Historial de préstamos
+
+![Historial de préstamos](images/reto_sistema_prestamos4.png)
+
+#### Devolución de equipo
+
+![Devolución de equipo](images/reto_sistema_prestamos5.png)
+
+### Resultado
+
+El proyecto permite gestionar el inventario de equipos, registrar préstamos, realizar devoluciones, consultar el historial y agregar nuevos equipos mediante un menú interactivo.
+
+De esta manera, se integran los conceptos de **listas, tuplas, diccionarios y funciones modulares** trabajados durante la actividad.
