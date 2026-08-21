@@ -192,5 +192,31 @@ Durante la prueba se verificaron los diferentes estados de los libros, incluyend
 ![Ejecución del taller de clases y objetos](images/taller_clases_objetos1.png)
 ![Ejecución del taller de clases y objetos](images/taller_clases_objetos2.png)
 
+## Taller de Encapsulación
+
+### Clase `CuentaBancaria`
+
+En este taller se desarrolló una clase `CuentaBancaria` aplicando el concepto de encapsulación mediante atributos internos y propiedades.
+
+La clase contiene los siguientes atributos:
+
+- `_titular`: almacena el nombre del titular de la cuenta.
+- `_saldo`: almacena el saldo actual de la cuenta.
+
+Se implementaron propiedades para controlar el acceso a estos atributos:
+
+- `titular`: permite consultar el titular, pero no modificarlo.
+- `saldo`: permite consultar y modificar el saldo, validando que no se establezca un valor negativo.
+
+También se implementaron los siguientes métodos:
+
+- `depositar(cantidad)`: aumenta el saldo cuando la cantidad ingresada es positiva y devuelve `True` si la operación fue exitosa.
+- `retirar(cantidad)`: disminuye el saldo cuando la cantidad es válida y existe suficiente dinero, devolviendo `True` o `False` según el resultado.
+
+Además, se realizaron pruebas para comprobar el funcionamiento de las validaciones, incluyendo depósitos inválidos, retiros con fondos insuficientes y el intento de establecer un saldo negativo.
+
+### Evidencia de ejecución
+
+![Ejecución del taller de encapsulamiento](images/taller_encapsulamiento.png)
 
 
