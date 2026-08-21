@@ -12,14 +12,16 @@ class Coche:
     def encender(self):
         if not self.encendido:
             self.encendido = True
-            return f"{self.marca} {self.modelo} encendido"return f"{self.marca} {self.modelo} ya estaba encendido"
+            return f"{self.marca} {self.modelo} encendido"
+        return f"{self.marca} {self.modelo} ya estaba encendido"
 
     # Método para apagar el coche
     def apagar(self):
         if self.encendido:
             self.encendido = False
             self.velocidad = 0
-            return f"{self.marca} {self.modelo} apagado"return f"{self.marca} {self.modelo} ya estaba apagado"
+            return f"{self.marca} {self.modelo} apagado"
+        return f"{self.marca} {self.modelo} ya estaba apagado"
         
 # Llamadas a métodos.
 mi_coche = Coche("Toyota", "Corolla")
@@ -39,7 +41,8 @@ class Coche:
     def encender(self):
         if not self.encendido:
             self.encendido = True
-            return f"{self.marca} {self.modelo} encendido"return f"{self.marca} {self.modelo} ya estaba encendido"
+            return f"{self.marca} {self.modelo} encendido" 
+        return f"{self.marca} {self.modelo} ya estaba encendido"
 
     # Método con parámetro
     def acelerar(self, incremento):
@@ -273,7 +276,8 @@ class Libro:
 
     def __str__(self):
         estado = "abierto" if self.abierto else "cerrado"
-        progreso = f"{self.pagina_actual}/{self.paginas} páginas"return f"{self.titulo} por {self.autor} - {progreso} - {estado}"
+        progreso = f"{self.pagina_actual}/{self.paginas} páginas"
+        return f"{self.titulo} por {self.autor} - {progreso} - {estado}"
 
 # Ejemplo de uso:
 libro = Libro("El Quijote", "Miguel de Cervantes", 863)
